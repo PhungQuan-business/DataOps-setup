@@ -142,7 +142,7 @@ chmod +x superset-install.sh
 
 This will:
 
-- Clone the official Apache Superset repository
+- Clone the official Apache Superset repository (The clone command uses the flag "--depth=1" which tells Git to only download the latest commit of the repository and does not fetch the full commit history, this makes the clone much faster and uses less disk space. This is also believed to be crucial since Apache Superset repo itself has a lot of commits)
 - Build and start Superset using Docker Compose
 
 **⚠️ Performance Note**:
