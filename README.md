@@ -78,11 +78,11 @@ docker compose -f database-docker-compose.yaml up -d
 
 **Access Information:**
 
-- **PostgreSQL**: `localhost:21001`
+- **PostgreSQL**: `localhost:5432`
   - Username: `airc`
   - Password: `admin`
   - Database: `dataops`
-- **pgAdmin Web UI**: `http://localhost:22001`
+- **pgAdmin Web UI**: `http://localhost:8081`
   - Email: `quan-airc@gmail.com`
   - Password: `admin`
 
@@ -97,8 +97,8 @@ docker compose -f datalake-docker-compose.yaml up -d
 
 **Access Information:**
 
-- **MinIO API**: `localhost:21002`
-- **MinIO Console**: `http://localhost:22002`
+- **MinIO API**: `localhost:9000`
+- **MinIO Console**: `http://localhost:9001`
   - Username: `admin`
   - Password: `password`
 
@@ -203,14 +203,14 @@ docker compose restart [service_name]
 
 ## 🌐 Service Ports Summary
 
-| Service       | Port  | URL                    | Purpose                   |
-| ------------- | ----- | ---------------------- | ------------------------- |
-| PostgreSQL    | 21001 | -                      | Database connection       |
-| pgAdmin       | 22001 | http://localhost:22001 | Database management       |
-| MinIO API     | 21002 | -                      | Object storage API        |
-| MinIO Console | 22002 | http://localhost:22002 | Object storage management |
-| Airflow       | 8080  | http://localhost:8080  | Workflow orchestration    |
-| Superset      | 8088  | http://localhost:8088  | Data visualization        |
+| Service       | Port | URL                   | Purpose                   |
+| ------------- | ---- | --------------------- | ------------------------- |
+| PostgreSQL    | 5432 | -                     | Database connection       |
+| pgAdmin       | 8081 | http://localhost:8081 | Database management       |
+| MinIO API     | 9000 | -                     | Object storage API        |
+| MinIO Console | 9001 | http://localhost:9001 | Object storage management |
+| Airflow       | 8080 | http://localhost:8080 | Workflow orchestration    |
+| Superset      | 8088 | http://localhost:8088 | Data visualization        |
 
 ## 🔐 Default Credentials
 
