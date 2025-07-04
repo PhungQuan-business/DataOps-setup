@@ -1,5 +1,5 @@
-git clone --depth=1 https://github.com/apache/superset.git
+git clone --depth=1  https://github.com/apache/superset.git
 
 cd superset
 
-docker compose up --build
+docker compose -f docker-compose-non-dev.yml up --build
